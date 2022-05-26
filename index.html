@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Basic -->
+    <div>
+        <h2>Basic 1:</h3>
+        <h3 id="basic1"></h5>
+    </div>
+
+    <!-- Basic 1 -->
+    <script>
+        console.log("Hello from the Console");
+        document.getElementById("basic1").innerHTML = "Hello from the Browser";
+        document.write("Hello from the Browser 2");
+    </script>
+
+    <!-- Basic 2 -->
+    <script src="main.js"></script>
+    <!-- Basic 3 -->
+    <script>
+        let age = 25;
+        str2 = `and I am ${age} years old`;
+        console.log(str2);
+    </script>
+
+    <!-- Basic 4 -->
+    <script>
+        const arr = ["Martin", "Thomas", "Peter", "Mathias", "Niki"];
+        console.log(`The most valuable player of the match is ${arr[2]}`);
+    </script>
+
+    <!-- Intermediate 1 -->
+    <script>
+        const arr2 = ["Tesla", "Audi", "Renault", "Volvo", "Mazda", "Fiat", "Ferrari"];
+        let result = arr2.sort();
+        console.log(result);
+    </script>
+
+    <!-- Intermediate 2 -->
+    <script>
+        const arr3 = ["apple", "banana", "kiwi"];
+        arr3.push("orange");
+        console.log(arr3);
+        arr3.pop();
+        console.log(arr3);
+
+        const arr4 = ["monkey", "horse", "dog"];
+        arr4.reverse();
+        console.log(arr4);
+        arr4.unshift("cat");
+        console.log(arr4);
+    </script>
+
+    <!-- Intermediate 3 -->
+    <script>
+        let str2 = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+        const result2 = str2.split("/");
+        for(i = 0; i < result.length; i++){
+            console.log(result2[i]);
+        }
+    </script>
+
+    <!-- Advanced 1 -->
+    <script>
+        var a = 7;
+        var b = 14; // a+b will be summed
+        var c = "21";
+        var d = '36'; // c and d will be added on the sum as strings
+        var e = 42; // e will be added as a string as everything that follows a string
+        const sum = a+b+c+d+e;
+        console.log("sum of a to e: " + sum);
+
+        var f = '1';
+        var g = 15;
+        var h = 8;
+        var i = "1";
+        const sum2 = f*g*h*i;
+        console.log("product of f to i: " + sum2);
+
+        const sum3 = sum / sum2;
+        console.log("fraction of sum and sum2: " + sum3);
+    </script>
+
+    <!-- Advanced 2 -->
+    <script>
+        const arr5 = [ [1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 25, 7], [21, 4, 6, 17], [3, 5, 26, 3] ];
+        console.log(arr5[1][1], arr5[4][2], arr5[5][3], arr5[2][3], arr5[2][1]); // 11, 25, 17, 27 and 0
+    </script>
+
+    <!-- Challenge 1 -->
+    <script>
+        const arr6 = [
+            ["Vienna", 0, 0, 0, 0], 
+            [0, "is", 0, 0, 0], 
+            [0, 0, "a", 0, 0], 
+            [0, 0, 0, "nice", 0], 
+            [0, 0, 0, 0, "city"]
+        ];
+        for(i = 0; i < arr6.length; i++){
+            console.log(arr6[i][i]);
+        }
+    </script>
+
+    <!-- Challenge 2 -->
+    <script>
+        let str3 = "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$properties $flow$down;$actions$flow$up";
+        let arr7 = str3.split("$");
+        let str4 = arr7.join(" ");
+        console.log(str4);
+    </script>
+</body>
+</html>
